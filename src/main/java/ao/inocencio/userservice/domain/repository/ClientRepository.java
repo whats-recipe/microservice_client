@@ -9,5 +9,5 @@ public interface ClientRepository {
     Client save(Client client);
     Optional<Client> findById(UUID id);
     boolean existsById(UUID id);
-
+    boolean existsByPhoneNumber(String phoneNumber);
 }
